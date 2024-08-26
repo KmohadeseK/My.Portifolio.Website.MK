@@ -16,7 +16,7 @@ Welcome to my personal portfolio website! This site is designed as a platform to
 
 ## How to Use
 
-1. Go to the "Projects" section.
+1. Go to the "Portifolio" section.
 2. Select the project you are interested in.
 3. Click on "View Project" to see it live and access its code.
 
@@ -25,7 +25,7 @@ Welcome to my personal portfolio website! This site is designed as a platform to
 If you have any questions or want to get in touch, please contact me via [email](mailto:mohadesekeshtkar4@gmail.com) or through social media.
 
 ---
->see See the project demo [here](https://kmohadesek.github.io/My.Portifolio.Website.MK/)
+>See the project demo [here](https://kmohadesek.github.io/My.Portifolio.Website.MK/)
 
 
 ![momo](assets/images/girlbaner.png)
