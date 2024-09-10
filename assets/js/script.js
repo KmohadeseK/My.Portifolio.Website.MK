@@ -54,3 +54,8 @@ const activeHeader = function () {
 }
 
 window.addEventListener("scroll", activeHeader);
+
+
+
+// Cursor Pointer
+//soon

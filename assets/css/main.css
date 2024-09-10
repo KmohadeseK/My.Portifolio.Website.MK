@@ -2,30 +2,6 @@
   #main.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-/**
- * TABLE OF CONTENT
- *
- * COMPONENTS
- * Btn............................Buttons style
- * Slider.........................Slider style
- * Card...........................Cards style
- *
- * MAIN CONTENT
- * Header.........................Modify header style
- * Hero...........................Hero styles
- * Client.........................Client style
- * About..........................About style
- * Skills.........................Skills style
- * Cta............................Cta style
- * Testimonials...................Testimonials style
- * Media queries..................Responsive for all devices
- */
-
-
 
 
 
@@ -36,7 +12,7 @@
 @import url("./components/btn.css");
 @import url("./components/slider.css");
 @import url("./components/card.css");
-
+@import url(../components/scrollbar.css);
 
 
 
@@ -45,11 +21,14 @@
   #HEADER
 \*-----------------------------------*/
 
-.header { background-color: transparent; }
 
-.header.active { background-color: var(--white); }
+.header {
+  background-color: transparent;
+}
 
-
+.header.active {
+  background-color: var(--white);
+}
 
 
 
@@ -91,9 +70,13 @@
   margin-block-end: 20px;
 }
 
-.hero-text { margin-block: 25px; }
+.hero-text {
+  margin-block: 25px;
+}
 
-.hero .btn { margin-inline: auto; }
+.hero .btn {
+  margin-inline: auto;
+}
 
 .hero-banner {
   max-width: max-content;
@@ -111,13 +94,17 @@
   padding-block: 38px;
 }
 
-.client svg:hover{
+.client svg:hover {
   color: aqua;
 }
 
-.client .slider-item { min-width: calc(50% - 15px); }
+.client .slider-item {
+  min-width: calc(50% - 15px);
+}
 
-.client .slider::-webkit-scrollbar { display: none; }
+.client .slider::-webkit-scrollbar {
+  display: none;
+}
 
 
 
@@ -132,7 +119,9 @@
   gap: 50px;
 }
 
-.about .section-text { margin-block: 25px 16px; }
+.about .section-text {
+  margin-block: 25px 16px;
+}
 
 .about-list {
   display: flex;
@@ -166,19 +155,27 @@
   #SKILLS
 \*-----------------------------------*/
 
-.skill { padding-block-end: 0; }
+.skill {
+  padding-block-end: 0;
+}
 
 .skill .container,
-.skill-list { display: grid; }
+.skill-list {
+  display: grid;
+}
 
-.skill .container { gap: 50px; }
+.skill .container {
+  gap: 50px;
+}
 
 .skill-list {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
 }
 
-.skill .card ion-icon { font-size: 3rem; }
+.skill .card ion-icon {
+  font-size: 3rem;
+}
 
 .skill .card .card-title {
   color: var(--jet);
@@ -188,65 +185,68 @@
 
 /*for screen width 530 */
 @media (max-width:530px) {
-  .skill-content{
+  .skill-content {
     margin: 0 auto;
     align-items: center;
   }
 
-  img{
+  img {
     max-width: 100%;
     height: auto
   }
- 
-  .footer{
+
+  .footer {
     width: 530px;
   }
-  .main-all{
+
+  .main-all {
     width: 530px;
   }
-    
+
 }
 
 /*for screen width 480 */
 @media (max-width:480px) {
-  .skill-content{
+  .skill-content {
     margin: 0 auto;
     align-items: center;
   }
 
-  img{
+  img {
     max-width: 100%;
     height: auto
   }
- 
-  .footer{
+
+  .footer {
     width: 480px;
   }
-  .main-all{
+
+  .main-all {
     width: 480px;
   }
-    
+
 }
 
 /*for screen width 414 */
 @media (max-width:414px) {
-  .skill-content{
+  .skill-content {
     margin: 0 auto;
     align-items: center;
   }
 
-  img{
+  img {
     max-width: 100%;
     height: auto
   }
- 
-  .footer{
+
+  .footer {
     width: 414px;
   }
-  .main-all{
+
+  .main-all {
     width: 414px;
   }
-    
+
 }
 
 
@@ -306,7 +306,9 @@
   font-weight: var(--fw-600);
 }
 
-.testi .client-title { font-size: var(--fs-14); }
+.testi .client-title {
+  font-size: var(--fs-14);
+}
 
 .testi .slider {
   margin-inline: -16px;
@@ -314,7 +316,9 @@
   padding-block-end: 35px;
 }
 
-.testi .slider::-webkit-scrollbar { height: 12px; }
+.testi .slider::-webkit-scrollbar {
+  height: 12px;
+}
 
 .testi .slider::-webkit-scrollbar-track {
   border: 1px solid var(--jet);
@@ -326,7 +330,9 @@
   border-radius: var(--radius-pill);
 }
 
-.testi .slider::-webkit-scrollbar-button { width: calc(25% - 20px); }
+.testi .slider::-webkit-scrollbar-button {
+  width: calc(25% - 20px);
+}
 
 
 
@@ -346,7 +352,9 @@
    * CLIENT, ABOUT & SKILL
    */
 
-  .client .slider-item { min-width: calc(33.33% - 20px); }
+  .client .slider-item {
+    min-width: calc(33.33% - 20px);
+  }
 
   .client .slider-item .w-100,
   .about-banner,
@@ -361,7 +369,9 @@
    * CTA
    */
 
-  .cta .container { justify-content: space-between; }
+  .cta .container {
+    justify-content: space-between;
+  }
 
 }
 
@@ -379,7 +389,9 @@
    * HERO
    */
 
-  .hero-text { --fs-18: 2rem; }
+  .hero-text {
+    --fs-18: 2rem;
+  }
 
   .hero::after {
     top: -20%;
@@ -394,7 +406,9 @@
    * CLIENT
    */
 
-  .client .slider-item { min-width: calc(25% - 22.5px); }
+  .client .slider-item {
+    min-width: calc(25% - 22.5px);
+  }
 
 
 
@@ -402,7 +416,9 @@
    * TESTIMONIALS
    */
 
-  .testi .slider-item { min-width: calc(50% - 15px); }
+  .testi .slider-item {
+    min-width: calc(50% - 15px);
+  }
 
 }
 
@@ -431,9 +447,13 @@
    * HERO
    */
 
-  .hero { text-align: left; }
+  .hero {
+    text-align: left;
+  }
 
-  .hero .btn { margin-inline: 0; }
+  .hero .btn {
+    margin-inline: 0;
+  }
 
 
 
@@ -441,7 +461,9 @@
    * CLIENT
    */
 
-  .client .slider-item { min-width: calc(20% - 24px); }
+  .client .slider-item {
+    min-width: calc(20% - 24px);
+  }
 
 
 
@@ -449,7 +471,9 @@
    * SKILL
    */
 
-  .skill .container { align-items: flex-start; }
+  .skill .container {
+    align-items: flex-start;
+  }
 
 }
 
@@ -467,6 +491,8 @@
    * ABOUT
    */
 
-  .about-list { gap: 40px; }
+  .about-list {
+    gap: 40px;
+  }
 
 }
