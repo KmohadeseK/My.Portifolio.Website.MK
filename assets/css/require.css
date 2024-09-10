@@ -2,26 +2,6 @@
   #require.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-/**
- * TABLE OF CONTENT
- *
- * Custom properties..............Global variables
- * Reset..........................Removed browser default style
- * Typography.....................Typography style
- * Reused.........................Reused classes
- * Preloader......................Preload style
- * Header.........................Header style
- * Footer.........................Footer style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -65,7 +45,7 @@
   --fs-17: 1.7rem;
   --fs-14: 1.4rem;
   --fs-12: 1.2rem;
-  
+
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -116,21 +96,27 @@
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 a,
 img,
 span,
 label,
 button,
-ion-icon { display: block; }
+ion-icon {
+  display: block;
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-img { height: auto; }
+img {
+  height: auto;
+}
 
 input,
 button,
@@ -140,14 +126,22 @@ textarea {
   font: inherit;
 }
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
 input,
-textarea { width: 100%; }
+textarea {
+  width: 100%;
+}
 
-ion-icon { pointer-events: none; }
+ion-icon {
+  pointer-events: none;
+}
 
-address { font-style: normal; }
+address {
+  font-style: normal;
+}
 
 html {
   font-family: var(--ff-jost);
@@ -163,17 +157,29 @@ body {
   overflow: hidden;
 }
 
-body.loaded { overflow: visible; }
+body.loaded {
+  overflow: visible;
+}
 
-:focus-visible { outline-offset: 4px; }
+:focus-visible {
+  outline-offset: 4px;
+}
 
-::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 98%);
+}
 
-::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
 
-::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
 
 
 
@@ -183,27 +189,49 @@ body.loaded { overflow: visible; }
   #TYPOGRAPHY
 \*-----------------------------------*/
 
-.headline-lg { font-size: var(--fs-45); }
+.headline-lg {
+  font-size: var(--fs-45);
+}
 
-.headline-md { font-size: var(--fs-38); }
+.headline-md {
+  font-size: var(--fs-38);
+}
 
-.headline-sm { font-size: var(--fs-32); }
+.headline-sm {
+  font-size: var(--fs-32);
+}
 
-.title-lg { font-size: var(--fs-27); }
+.title-lg {
+  font-size: var(--fs-27);
+}
 
-.title-md { font-size: var(--fs-26); }
+.title-md {
+  font-size: var(--fs-26);
+}
 
-.title-sm { font-size: var(--fs-22); }
+.title-sm {
+  font-size: var(--fs-22);
+}
 
-.body-lg { font-size: var(--fs-20); }
+.body-lg {
+  font-size: var(--fs-20);
+}
 
-.body-md { font-size: var(--fs-18); }
+.body-md {
+  font-size: var(--fs-18);
+}
 
-.body-sm { font-size: var(--fs-17); }
+.body-sm {
+  font-size: var(--fs-17);
+}
 
-.label-lg { font-size: var(--fs-14); }
+.label-lg {
+  font-size: var(--fs-14);
+}
 
-.label-md { font-size: var(--fs-12); }
+.label-md {
+  font-size: var(--fs-12);
+}
 
 /**
  * font weight
@@ -221,7 +249,9 @@ body.loaded { overflow: visible; }
   line-height: 1.2;
 }
 
-.body-lg { font-weight: var(--fw-500); }
+.body-lg {
+  font-weight: var(--fw-500);
+}
 
 
 
@@ -231,11 +261,17 @@ body.loaded { overflow: visible; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container {
+  padding-inline: 16px;
+}
 
-.section { padding-block: var(--section-padding); }
+.section {
+  padding-block: var(--section-padding);
+}
 
-.w-100 { width: 100%; }
+.w-100 {
+  width: 100%;
+}
 
 .section-title {
   margin-block-end: 30px;
@@ -243,7 +279,9 @@ body.loaded { overflow: visible; }
   letter-spacing: 3px;
 }
 
-.text-center { text-align: center; }
+.text-center {
+  text-align: center;
+}
 
 .img-cover {
   width: 100%;
@@ -283,7 +321,9 @@ body.loaded { overflow: visible; }
   z-index: 6;
 }
 
-.preloader.loaded { display: none; }
+.preloader.loaded {
+  display: none;
+}
 
 .preloader-circle {
   width: 60px;
@@ -295,8 +335,13 @@ body.loaded { overflow: visible; }
 }
 
 @keyframes loading {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(1turn); }
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 
@@ -307,7 +352,9 @@ body.loaded { overflow: visible; }
   #HEADER
 \*-----------------------------------*/
 
-.header .btn { display: none; }
+.header .btn {
+  display: none;
+}
 
 .header {
   position: fixed;
@@ -320,7 +367,9 @@ body.loaded { overflow: visible; }
   transition: var(--transition-1);
 }
 
-.header.active { box-shadow: var(--shadow); }
+.header.active {
+  box-shadow: var(--shadow);
+}
 
 .header .container {
   display: flex;
@@ -354,17 +403,19 @@ body.loaded { overflow: visible; }
   transition-delay: 0s;
 }
 
-.navbar > * {
+.navbar>* {
   opacity: 0;
   transition: var(--transition-1);
 }
 
-.navbar.active > * {
+.navbar.active>* {
   opacity: 1;
   transition-delay: 0.4s;
 }
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--jet_a10); }
+.navbar-item:not(:last-child) {
+  border-block-end: 1px solid var(--jet_a10);
+}
 
 .navbar-link {
   text-transform: uppercase;
@@ -373,7 +424,9 @@ body.loaded { overflow: visible; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus-visible, .active) { color: var(--orange-red); }
+.navbar-link:is(:hover, :focus-visible, .active) {
+  color: var(--orange-red);
+}
 
 
 
@@ -397,9 +450,13 @@ body.loaded { overflow: visible; }
   margin-block-end: 15px;
 }
 
-.social-link { font-size: 1.8rem; }
+.social-link {
+  font-size: 1.8rem;
+}
 
-.social-link:is(:hover, :focus-visible) { color: var(--orange-red); }
+.social-link:is(:hover, :focus-visible) {
+  color: var(--orange-red);
+}
 
 
 
@@ -415,7 +472,9 @@ body.loaded { overflow: visible; }
 
 @media (min-width: 575px) {
 
-  .title-lg { --fs-27: 3.5rem; }
+  .title-lg {
+    --fs-27: 3.5rem;
+  }
 
 }
 
@@ -433,11 +492,17 @@ body.loaded { overflow: visible; }
    * TYPOGRAPHY
    */
 
-  .headline-lg { --fs-45: 6rem; }
+  .headline-lg {
+    --fs-45: 6rem;
+  }
 
-  .headline-md { --fs-38: 4.5rem; }
+  .headline-md {
+    --fs-38: 4.5rem;
+  }
 
-  .title-md { --fs-26: 3.2rem; }
+  .title-md {
+    --fs-26: 3.2rem;
+  }
 
 
 
@@ -445,9 +510,13 @@ body.loaded { overflow: visible; }
    * REUSED STYLE
    */
 
-  .section { --section-padding: 100px; }
+  .section {
+    --section-padding: 100px;
+  }
 
-  .section-title { margin-block-end: 40px; }
+  .section-title {
+    margin-block-end: 40px;
+  }
 
 
 
@@ -455,7 +524,9 @@ body.loaded { overflow: visible; }
    * FOOTER
    */
 
-  .footer { padding-block: 25px; }
+  .footer {
+    padding-block: 25px;
+  }
 
   .footer .container {
     display: flex;
@@ -463,7 +534,9 @@ body.loaded { overflow: visible; }
     align-items: center;
   }
 
-  .social-list { margin-block-end: 0; }
+  .social-list {
+    margin-block-end: 0;
+  }
 
 }
 
@@ -476,16 +549,22 @@ body.loaded { overflow: visible; }
  */
 
 @media (min-width: 992px) {
-  
+
   /**
    * TYPOGRAPHY
    */
 
-  .headline-md { --fs-38: 5rem; }
+  .headline-md {
+    --fs-38: 5rem;
+  }
 
-  .title-lg { --fs-27: 4rem; }
+  .title-lg {
+    --fs-27: 4rem;
+  }
 
-  .title-sm { --fs-22: 2.4rem; }
+  .title-sm {
+    --fs-22: 2.4rem;
+  }
 
 
 
@@ -493,7 +572,9 @@ body.loaded { overflow: visible; }
    * REUSED STYLE
    */
 
-  .section-title { margin-block-end: 60px; }
+  .section-title {
+    margin-block-end: 60px;
+  }
 
 
 
@@ -501,20 +582,28 @@ body.loaded { overflow: visible; }
    * HEADER
    */
 
-  .nav-toggle-btn { display: none; }
+  .nav-toggle-btn {
+    display: none;
+  }
 
   .navbar,
   .navbar.active,
-  .navbar > * {
+  .navbar>* {
     all: unset;
     display: block;
   }
 
-  .navbar-list { display: flex; }
+  .navbar-list {
+    display: flex;
+  }
 
-  .navbar-item:not(:last-child) { border-block-end: none; }
+  .navbar-item:not(:last-child) {
+    border-block-end: none;
+  }
 
-  .navbar-link { position: relative; }
+  .navbar-link {
+    position: relative;
+  }
 
   .navbar-link::after {
     content: "";
@@ -534,7 +623,9 @@ body.loaded { overflow: visible; }
     transform-origin: left;
   }
 
-  .header .btn { display: block; }
+  .header .btn {
+    display: block;
+  }
 
 }
 
@@ -552,9 +643,11 @@ body.loaded { overflow: visible; }
    * TYPOGRAPHY
    */
 
-  .headline-lg { --fs-45: 7rem; }
+  .headline-lg {
+    --fs-45: 7rem;
+  }
 
-  
+
 
   /**
    * REUSED STYLE

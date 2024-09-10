@@ -2,9 +2,6 @@
   #main.css
 \*-----------------------------------*/
 
-
-
-
 /*-----------------------------------*\
   #COMPONENTS
 \*-----------------------------------*/
@@ -13,8 +10,6 @@
 @import url("./components/slider.css");
 @import url("./components/card.css");
 @import url(../components/scrollbar.css);
-
-
 
 
 /*-----------------------------------*\
@@ -29,7 +24,6 @@
 .header.active {
   background-color: var(--white);
 }
-
 
 
 /*-----------------------------------*\
