@@ -157,6 +157,12 @@ body {
   overflow: hidden;
 }
 
+/* body:hover {
+  cursor: url('../images/cursorPointerRed.png'), auto;
+
+} */
+
+
 body.loaded {
   overflow: visible;
 }

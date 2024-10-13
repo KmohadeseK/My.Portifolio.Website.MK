@@ -2,6 +2,7 @@
   #main.css
 \*-----------------------------------*/
 
+
 /*-----------------------------------*\
   #COMPONENTS
 \*-----------------------------------*/
@@ -36,6 +37,7 @@
   padding-block-start: calc(var(--section-padding) + 60px);
   text-align: center;
   overflow: hidden;
+
 }
 
 .hero::after {
